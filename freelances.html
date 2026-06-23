@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>AfriTalent - Freelances</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">AfriTalent</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-sm btn-warning ms-3">Rejoindre AfriTalent</a>
+      <button id="darkModeBtn" class="btn btn-sm btn-outline-light ms-2" aria-label="Activer le mode sombre">Mode sombre</button>
+    </div>
+  </div>
+</nav>
+
+
+<main class="py-5">
+  <div class="container">
+    <h1 class="text-center mb-4">Nos freelances</h1>
+    <div class="mb-4 text-center">
+      <button class="btn btn-outline-secondary filter-btn" data-cat="all">Tous</button>
+      <button class="btn btn-outline-secondary filter-btn" data-cat="dev">Developpement</button>
+      <button class="btn btn-outline-secondary filter-btn" data-cat="design">Design</button>
+      <button class="btn btn-outline-secondary filter-btn" data-cat="marketing">Marketing</button>
+    </div>
+    <div class="row" id="freelanceList">
+<div class="col-md-4 freelance-card" data-cat="dev"><div class="card p-3"><h5>Awa Diop</h5><p>Developpeuse Web</p><p>5000 FCFA/h - 4.8 etoiles</p><button class="btn btn-sm btn-outline-primary">Voir le profil</button></div></div>
+<div class="col-md-4 freelance-card" data-cat="design"><div class="card p-3"><h5>Kofi Mensah</h5><p>Designer UI/UX</p><p>4500 FCFA/h - 4.6 etoiles</p><button class="btn btn-sm btn-outline-primary">Voir le profil</button></div></div>
+<div class="col-md-4 freelance-card" data-cat="dev"><div class="card p-3"><h5>Fatou Ndiaye</h5><p>Developpeuse Mobile</p><p>5500 FCFA/h - 4.9 etoiles</p><button class="btn btn-sm btn-outline-primary">Voir le profil</button></div></div>
+<div class="col-md-4 freelance-card" data-cat="marketing"><div class="card p-3"><h5>Ibrahim Toure</h5><p>Specialiste SEO</p><p>4000 FCFA/h - 4.5 etoiles</p><button class="btn btn-sm btn-outline-primary">Voir le profil</button></div></div>
+<div class="col-md-4 freelance-card" data-cat="design"><div class="card p-3"><h5>Aminata Sow</h5><p>Designer Graphique</p><p>4200 FCFA/h - 4.7 etoiles</p><button class="btn btn-sm btn-outline-primary">Voir le profil</button></div></div>
+<div class="col-md-4 freelance-card" data-cat="dev"><div class="card p-3"><h5>Moussa Kane</h5><p>Developpeur Backend</p><p>5800 FCFA/h - 4.8 etoiles</p><button class="btn btn-sm btn-outline-primary">Voir le profil</button></div></div>
+<div class="col-md-4 freelance-card" data-cat="marketing"><div class="card p-3"><h5>Khadija Ba</h5><p>Community Manager</p><p>3800 FCFA/h - 4.4 etoiles</p><button class="btn btn-sm btn-outline-primary">Voir le profil</button></div></div>
+<div class="col-md-4 freelance-card" data-cat="dev"><div class="card p-3"><h5>Cheikh Fall</h5><p>Developpeur Fullstack</p><p>6000 FCFA/h - 4.9 etoiles</p><button class="btn btn-sm btn-outline-primary">Voir le profil</button></div></div>
+<div class="col-md-4 freelance-card" data-cat="design"><div class="card p-3"><h5>Ndeye Gueye</h5><p>Designer Produit</p><p>4600 FCFA/h - 4.6 etoiles</p><button class="btn btn-sm btn-outline-primary">Voir le profil</button></div></div>
+    </div>
+  </div>
+</main>
+
+<footer class="text-center py-4">
+  <div class="container"><p>&copy; <span id="year"></span> AfriTalent. Tous droits reserves.</p></div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
